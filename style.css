@@ -1,0 +1,172 @@
+/* configurações gerais */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container {
+  display: grid;
+  grid-template-areas:
+    "a1 a1"
+    "a2 a3"
+    "a4 a4";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 1fr 50px;
+  height: 100vh;
+  width: 1024px;
+}
+.button1 {
+  background-color: rgb(29, 163, 80);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 11px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 0.2px solid #ffffff00;
+}
+.button2 {
+  background-color: rgb(78, 78, 78);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 11px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 0.2px solid #ffffff00;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 25px;
+}
+
+/* Topo */
+header {
+  grid-area: a1;
+  /* background: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* background: yellowgreen; */
+}
+
+.logo {
+  height: 100%;
+  width: 50px;
+  /* background: yellow; */
+}
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: yellow; */
+  gap: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: white;
+  color: rgb(83, 83, 83);
+  border: 0.2px solid #00000023;
+}
+
+.navbar a:hover {
+    color: rgb(29, 163, 80);
+    transition-duration: 0.5s;
+
+}
+
+/* conteudo */
+main {
+  grid-area: a2;
+  /* background: cadetblue; */
+  display: flex;
+  align-items: center;
+}
+.conteudo {
+  font-family: "Courier New", Courier, monospace;
+  /* background: mediumpurple; */
+  font-weight: bold;
+}
+.btn-2 {
+  background: white;
+  color: rgb(83, 83, 83);
+  border: 0.2px solid #00000023;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  /* background: fuchsia; */
+}
+
+.imagem {
+  grid-area: a3;
+  /* background: cornflowerblue; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.astoufo {
+  border-radius: 100%;
+}
+
+main p {
+  margin: 10px 0 20px 0;
+  font-weight: lighter;
+}
+
+/* rodapé */
+footer {
+  grid-area: a4;
+  /* background: green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  font-weight: bolder;
+}
